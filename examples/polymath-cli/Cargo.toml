@@ -1,0 +1,10 @@
+[package]
+name = "polymath-cli"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+polymath-rs = { path = "../../polymath-rs" }
+open = "5.0"
+rand = "0.8"
+clap = { version = "4", features = ["derive"] }

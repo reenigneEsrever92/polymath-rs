@@ -1,0 +1,15 @@
+[package]
+name = "polymath-rs"
+description = "AsciiMath parser"
+repository = "https://github.com/reenigneEsrever92/polymath-rs"
+version = "0.1.0"
+edition = "2021"
+readme = "README.md"
+license = "Apache-2.0"
+keywords = ["asciimath", "parser", "mathml"]
+categories = ["mathematics", "parser-implementations"]
+
+[dependencies]
+itertools = { workspace = true }
+tracing = { workspace = true }
+tracing-subscriber = { workspace = true }

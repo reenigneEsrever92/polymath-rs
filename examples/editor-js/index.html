@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Asciimath Editor</title>
+  <script src="main.js"></script>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0;
+    }
+
+    #container {
+      width: 768px;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      background-color: lightgray;
+      padding: 10px;
+    }
+
+    #input {
+      height: 200px;
+      border: none;
+      margin-bottom: 10px;
+      border-radius: 2px;
+    }
+
+    #output {
+      height: 200px;
+      border-radius: 2px;
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      justify-content: center;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="container">
+    <h1>Asciimath</h1>
+    <label>input:</label><textarea id="input"></textarea>
+    <label>output:</label>
+    <div id="output"></div>
+  </div>
+</body>
+
+</html>

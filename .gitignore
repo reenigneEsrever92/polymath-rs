@@ -1,0 +1,49 @@
+
+
+# Binaries
+*.class
+*.jar
+*.war
+*.ear
+*.db
+rebel.xml
+
+# Maven
+bin/
+target/
+
+# Eclipse 
+.settings/
+.classpath
+.project
+*.jsfdia
+.temp-*
+
+# SCM
+.svn/
+.git/
+
+# OS
+.DS_Store
+Thumbs.db 
+Desktop.ini
+
+# Misc
+*.swp
+.factorypath
+.tern-project
+.flattened-pom.xml
+
+# IntelliJ
+.idea/
+*.iml
+
+# Angular
+node_modules/
+node/
+dist/
+tmp/
+out-tsc/
+
+# Metals
+.metals
