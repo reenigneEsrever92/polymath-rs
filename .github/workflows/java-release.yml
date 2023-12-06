@@ -1,0 +1,20 @@
+name: Java Release
+
+on:
+  workflow_dispatch:
+    inputs:
+      version_level:
+        type: choice
+        description: Version Level
+        options:
+          - prerelease
+          - patch
+          - minor
+          - major
+
+env:
+  CARGO_TERM_COLOR: always
+
+jobs:
+  release-all:
+    runs-on: ubuntu-latest

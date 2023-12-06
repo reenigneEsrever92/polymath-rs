@@ -1,4 +1,4 @@
-name: Rust Release Pre Patch
+name: Rust Release
 
 on:
   workflow_dispatch:
@@ -19,7 +19,7 @@ env:
   CARGO_TERM_COLOR: always
 
 jobs:
-  release-all:
+  release:
     runs-on: ubuntu-latest
 
     steps:
