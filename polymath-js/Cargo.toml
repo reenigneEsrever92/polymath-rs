@@ -1,8 +1,8 @@
 [package]
-name = "polymath-js"
-version = "0.1.0"
-authors = ["Felix Marezki <fmarezki@gmail.com>"]
 edition = "2021"
+name = "polymath-js"
+authors.workspace = true
+version.workspace = true
 
 [lib]
 crate-type = ["cdylib", "rlib"]
