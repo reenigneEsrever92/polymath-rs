@@ -329,14 +329,14 @@ checksum = "e0a7ae3ac2f1173085d398531c705756c94a4c56843785df85a60c1a0afac116"
 
 [[package]]
 name = "polymath-c"
-version = "0.1.0"
+version = "0.1.1-alpha.0"
 dependencies = [
  "polymath-rs",
 ]
 
 [[package]]
 name = "polymath-cli"
-version = "0.1.0"
+version = "0.1.1-alpha.0"
 dependencies = [
  "clap",
  "open",
@@ -346,7 +346,7 @@ dependencies = [
 
 [[package]]
 name = "polymath-js"
-version = "0.1.0"
+version = "0.1.1-alpha.0"
 dependencies = [
  "console_error_panic_hook",
  "polymath-rs",
@@ -357,7 +357,7 @@ dependencies = [
 
 [[package]]
 name = "polymath-rs"
-version = "0.1.0"
+version = "0.1.1-alpha.0"
 dependencies = [
  "itertools",
  "tracing",
