@@ -1,5 +1,6 @@
 [package]
 name = "polymath-c"
+description = "Polymath C bindings"
 edition = "2021"
 license = "MIT"
 authors.workspace = true
