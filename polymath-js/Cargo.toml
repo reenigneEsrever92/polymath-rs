@@ -1,6 +1,7 @@
 [package]
 edition = "2021"
 name = "polymath-js"
+license = "MIT"
 authors.workspace = true
 version.workspace = true
 

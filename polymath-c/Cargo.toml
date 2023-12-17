@@ -1,6 +1,7 @@
 [package]
 name = "polymath-c"
 edition = "2021"
+license = "MIT"
 authors.workspace = true
 version.workspace = true
 
