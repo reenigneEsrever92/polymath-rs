@@ -11,10 +11,17 @@ on:
           - patch
           - minor
           - major
+    secrets:
+      GPG_PRIVATE_KEY:
+        required: true
 
 env:
   CARGO_TERM_COLOR: always
 
 jobs:
-  release-all:
+  release:
     runs-on: ubuntu-latest
+
+    steps:
+      - name: Test
+        run: docker ps
