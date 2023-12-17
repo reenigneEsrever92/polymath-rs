@@ -23,5 +23,5 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Test
-        run: docker ps
+      - name: Build Docker Image
+        run: docker build . -t build-image
