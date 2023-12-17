@@ -46,4 +46,4 @@ jobs:
       - name: Login
         run: cargo login ${{secrets.CRATES_IO_TOKEN}}
       - name: Publish
-        run: cargo workspaces -y ${{ github.event.inputs.version_level }}
+        run: cargo workspaces publish -y ${{ github.event.inputs.version_level }}
