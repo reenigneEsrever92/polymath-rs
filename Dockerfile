@@ -21,3 +21,6 @@ RUN echo "export PATH=\$PATH:/osxcross/target/bin" >> ~/.bashrc
 
 WORKDIR /polymath
 
+ADD entrypoint.sh /opt/entrypoint.sh
+
+ENTRYPOINT [ "/opt/entrypoint.sh" ]

@@ -1,7 +1,6 @@
 #!/bin/bash
 
-echo $HOME/.profile
-source $HOME/.profile
+source $HOME/.cargo/env
 
 exec "$@"
 
