@@ -1,6 +1,6 @@
 [workspace]
 resolver = "2"
-members = ["polymath-c", "polymath-rs", "polymath-js", "examples/polymath-cli"]
+members = ["polymath-c", "polymath-rs", "polymath-js", "examples/polymath-cli", "xtask"]
 
 [workspace.package]
 version = "0.1.1-alpha.3"
@@ -18,3 +18,7 @@ wasm-bindgen = "0.2.63"
 console_error_panic_hook = "0.1.7"
 wee_alloc = "0.4.5"
 wasm-bindgen-test = "0.3.13"
+
+# dev
+clap = "4.4"
+color-eyre = "0.6"
