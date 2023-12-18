@@ -1,5 +1,8 @@
 use std::ffi::{CStr, CString};
 
+///
+/// # Safety
+///
 #[no_mangle]
 pub unsafe extern "C" fn to_math_ml(input: *const u8) -> *const u8 {
     if !input.is_null() {
