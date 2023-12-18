@@ -29,3 +29,10 @@ jobs:
         run: docker build . -t build-image
       - name: Make shared libs
         run: docker run --rm -v$(pwd):/polymath build-image make
+      - uses: actions/setup-java@v4
+        with:
+          distribution: 'zulu'
+          java-version: '21'
+          cache: 'maven'
+      - name: Build with Maven
+        run: mvn clean install
