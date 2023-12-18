@@ -59,7 +59,7 @@ mod test {
         "<math display=\"block\"><mrow><mo>[</mo><mtable columnlines=\"none\"><mtr><mtd><mn>1</mn></mtd><mtd><mn>2</mn></mtd></mtr><mtr><mtd><mn>2</mn></mtd><mtd><mn>23</mn></mtd></mtr></mtable><mo>]</mo></mrow></math>"
     );
 
-    test_parse!(
+   test_parse!(
         test_vector_sum,
         "[[1],[sum_1^2a]]",
         "<math display=\"block\"><mrow><mo>[</mo><mtable columnlines=\"\"><mtr><mtd><mn>1</mn></mtd></mtr><mtr><mtd><munderover><mo>&#x2211;</mo><mn>1</mn><mn>2</mn></munderover><mi>a</mi></mtd></mtr></mtable><mo>]</mo></mrow></math>"

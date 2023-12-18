@@ -1,6 +1,7 @@
 #!/bin/bash
 
-source $HOME/.cargo/env
+export PATH=$PATH:/osxcross/target/bin
+. $HOME/.cargo/env
 
 exec "$@"
 
