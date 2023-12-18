@@ -27,3 +27,5 @@ jobs:
       - uses: fregante/setup-git-user@v1
       - name: Build Docker Image
         run: docker build . -t build-image
+      - name: Make shared libs
+        run: docker run --rm -v$(pwd):polymath build-image make

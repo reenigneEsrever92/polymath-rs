@@ -51,7 +51,7 @@ libpolymath_c_darwin_x86_64:
 
 libpolymath_c_linux_x86_64:
 	mkdir -p polymath-java/src/main/resources/linux-x86-64
-	cp target/x86_64-unknown-linux-gnu/release/libpolymath_c.so \
+	cp target/release/libpolymath_c.so \
 	polymath-java/src/main/resources/linux-x86-64
 
 polymath_c_win32_x86_64:

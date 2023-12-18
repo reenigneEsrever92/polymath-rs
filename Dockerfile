@@ -2,7 +2,7 @@ FROM --platform=x86_64 fedora as base
 
 RUN dnf group install -y "Development Tools" 
 
-RUN dnf install -y git wget cmake libxml2-devel openssl-devel clang mingw64-gcc xz
+RUN dnf install -y git wget cmake libxml2-devel openssl-devel clang mingw64-gcc xz java-17-openjdk
 
 RUN mkdir /osxcross
 
