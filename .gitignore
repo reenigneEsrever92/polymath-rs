@@ -1,12 +1,9 @@
-
-
 # Binaries
 *.class
 *.jar
 *.war
 *.ear
 *.db
-rebel.xml
 
 # Maven
 bin/
