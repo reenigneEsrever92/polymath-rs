@@ -12,4 +12,6 @@ categories = ["mathematics", "parser-implementations"]
 [dependencies]
 itertools = { workspace = true }
 tracing = { workspace = true }
+
+[devDependencies]
 tracing-subscriber = { workspace = true }
