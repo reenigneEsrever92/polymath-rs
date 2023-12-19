@@ -46,7 +46,7 @@ jobs:
       - name: Login
         run: cargo login ${{ secrets.CRATES_IO_TOKEN }}
       - name: Sync Java Version
-        run: cargo xtask polymath-java sync-version
+        run: cargo xtask polymath-java sync-version && git add .
       - name: Bump version
         run: cargo workspaces version -y --no-individual-tags ${{ github.event.inputs.version_level }}
       - name: Publish
