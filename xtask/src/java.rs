@@ -1,42 +1,49 @@
-use std::{
-    io::Stdout,
-    os::unix::process::CommandExt,
-    process::{Command, Stdio},
-};
-
 use clap::Subcommand;
 use color_eyre::Result;
+use duct::cmd;
 
 #[derive(Subcommand, Debug)]
-pub enum JavaCommand {
+pub enum PolymathJavaCommand {
     Version,
-    Release,
+    SyncVersion,
 }
 
-pub fn exec(cmd: JavaCommand) -> Result<()> {
+pub fn exec(cmd: PolymathJavaCommand) -> Result<()> {
     match cmd {
-        JavaCommand::Version => {
+        PolymathJavaCommand::Version => {
             println!("{}", get_java_version()?);
             Ok(())
         }
-        JavaCommand::Release => release(),
+        PolymathJavaCommand::SyncVersion => sync_version(),
     }
 }
 
 fn get_java_version() -> Result<String> {
-    let out = Command::new("mvn")
-        .current_dir("polymath-java")
-        .args([
-            "help:evaluate",
-            "-Dexpression=project.version",
-            "-q",
-            "-DforceStdout",
-        ])
-        .output()?;
-
-    Ok(String::from_utf8(out.stdout)?)
+    Ok(cmd!(
+        "mvn",
+        "help:evaluate",
+        "-Dexpression=project.version",
+        "-q",
+        "-DforceStdout"
+    )
+    .dir("polymath-java")
+    .read()?)
 }
 
-fn release() -> Result<()> {
-    todo!()
+fn sync_version() -> Result<()> {
+    let crate_version = get_crate_version();
+    set_version(&crate_version)?;
+    Ok(())
+}
+
+fn set_version(version: &str) -> Result<String> {
+    let current_version = get_java_version();
+    cmd!("mvn", "versions:set", format!("-DnewVersion={version}"))
+        .dir("polymath-java")
+        .run()?;
+    current_version
+}
+
+fn get_crate_version() -> String {
+    env!("CARGO_PKG_VERSION").to_owned()
 }

@@ -7,3 +7,4 @@ authors.workspace = true
 [dependencies]
 clap = { workspace = true, features = ["derive"] }
 color-eyre = { workspace = true }
+duct = { workspace = true }

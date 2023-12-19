@@ -21,4 +21,5 @@ wasm-bindgen-test = "0.3.13"
 
 # dev
 clap = "4.4"
+duct = "0.13"
 color-eyre = "0.6"

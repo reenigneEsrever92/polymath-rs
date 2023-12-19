@@ -6,7 +6,7 @@
 
   <groupId>eu.reverseengineer</groupId>
   <artifactId>polymath</artifactId>
-  <version>0.1.1-alpha.3</version>
+  <version>0.1.0-aplha.0</version>
   <description>polymath java</description>
 
   <licenses>

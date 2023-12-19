@@ -1,5 +1,5 @@
 use clap::{Parser, Subcommand};
-use java::JavaCommand;
+use java::PolymathJavaCommand;
 
 mod java;
 
@@ -12,7 +12,7 @@ struct Args {
 #[derive(Subcommand, Debug)]
 enum Command {
     #[command(subcommand)]
-    Java(JavaCommand),
+    PolymathJava(PolymathJavaCommand),
 }
 
 fn main() -> color_eyre::Result<()> {
@@ -20,6 +20,6 @@ fn main() -> color_eyre::Result<()> {
     let args = Args::parse();
 
     match args.command {
-        Command::Java(java_cmd) => java::exec(java_cmd),
+        Command::PolymathJava(java_cmd) => java::exec(java_cmd),
     }
 }

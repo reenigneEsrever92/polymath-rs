@@ -25,6 +25,10 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - uses: fregante/setup-git-user@v1
+      - uses: actions-rs/toolchain@v1
+        with:
+          toolchain: stable
+          override: true
       - name: Build Docker Image
         run: docker build . -t build-image
       - name: Make shared libs
@@ -34,5 +38,15 @@ jobs:
           distribution: 'zulu'
           java-version: '21'
           cache: 'maven'
+      - name: Set up Maven Central Repository
+        uses: actions/setup-java@v1
+        with:
+          java-version: 21
+          server-id: ossrh
+          server-username: SONATYPE_USER
+          server-password: SONATYPE_PW
+          gpg-private-key: ${{ secrets.GPG_PRIVATE_KEY }}
+          gpg-passphrase: GPG_PASSPHRASE
+
       - name: Build with Maven
         run: cd polymath-java && mvn clean install
