@@ -13,3 +13,35 @@ env:
 jobs:
   release:
     runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - uses: fregante/setup-git-user@v1
+      - uses: actions-rs/toolchain@v1
+        with:
+          toolchain: stable
+          override: true
+      - name: Set up cargo cache
+        uses: actions/cache@v3
+        continue-on-error: false
+        with:
+          path: |
+            ~/.cargo/bin/
+            ~/.cargo/registry/index/
+            ~/.cargo/registry/cache/
+            ~/.cargo/git/db/
+            target
+          key: ${{ runner.os }}-cargo
+          restore-keys: ${{ runner.os }}-cargo
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '14.x'
+          registry-url: 'https://registry.npmjs.org'
+      - name: Install wasm-pack
+        run: cargo install wasm-pack
+      - name: Build
+        run: cd polymath-js && wasm-pack build
+      - name: Publish to npm.js
+        run: cd polymath-js && npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

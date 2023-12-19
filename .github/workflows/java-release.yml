@@ -51,3 +51,4 @@ jobs:
           MAVEN_USERNAME: ${{ secrets.SONATYPE_USER }}
           MAVEN_PASSWORD: ${{ secrets.SONATYPE_PW }}
           MAVEN_GPG_PASSPHRASE: ${{ secrets.GPG_PASSPHRASE }}
+
