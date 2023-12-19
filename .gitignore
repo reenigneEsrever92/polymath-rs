@@ -47,3 +47,6 @@ out-tsc/
 
 # Metals
 .metals
+
+# exclude java resources
+**/src/main/resources
