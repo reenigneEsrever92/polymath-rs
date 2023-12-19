@@ -4,10 +4,13 @@
 
   <modelVersion>4.0.0</modelVersion>
 
+  <name>Polymath Java</name>
+  <url>https://github.com/reenigneEsrever92/polymath-rs</url>
+
   <groupId>eu.reverseengineer</groupId>
-  <artifactId>polymath</artifactId>
+  <artifactId>polymath-java</artifactId>
   <version>0.1.1-alpha.3</version>
-  <description>polymath java</description>
+  <description>Polymath bindings for java</description>
 
   <licenses>
     <license>
@@ -22,6 +25,10 @@
       <name>Felix Marezki</name>
     </developer>
   </developers>
+
+  <scm>
+    <url>https://github.com/reenigneEsrever92/polymath-rs</url>
+  </scm>
 
   <dependencyManagement>
     <dependencies>
