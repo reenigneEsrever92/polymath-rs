@@ -32,7 +32,7 @@ public class Polymath {
     }
   }
 
-  public String to_math_ml() {
+  public String toMathMl() {
     if (INSTANCE == null) {
       init();
     }

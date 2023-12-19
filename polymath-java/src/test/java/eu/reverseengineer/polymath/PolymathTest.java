@@ -12,7 +12,7 @@ public class PolymathTest {
   @ParameterizedTest
   @MethodSource("testCases")
   public void test_to_math_ml(String asciimath, String mathml) {
-    Assertions.assertThat(Polymath.of(asciimath).to_math_ml()).isEqualTo(mathml);
+    Assertions.assertThat(Polymath.of(asciimath).toMathMl()).isEqualTo(mathml);
   }
 
   private static Stream<Arguments> testCases() {
