@@ -45,6 +45,8 @@ jobs:
           server-password: MAVEN_PASSWORD
           gpg-private-key: ${{ secrets.GPG_PRIVATE_KEY }}
           gpg-passphrase: MAVEN_GPG_PASSPHRASE
+      - name: Sync Java Version
+        run: cargo xtask polymath-java sync-version
       - name: Build with Maven
         run: cd polymath-java && mvn -B clean deploy -Pci-cd
         env:
