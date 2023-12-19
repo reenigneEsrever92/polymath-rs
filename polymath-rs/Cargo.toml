@@ -1,8 +1,9 @@
 [package]
 name = "polymath-rs"
 description = "AsciiMath parser"
+authors.workspace = true
+version.workspace = true
 repository = "https://github.com/reenigneEsrever92/polymath-rs"
-version = "0.1.1-alpha.4"
 edition = "2021"
 readme = "README.md"
 license = "MIT"
