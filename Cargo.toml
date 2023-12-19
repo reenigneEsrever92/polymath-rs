@@ -1,6 +1,6 @@
 [workspace]
 resolver = "2"
-members = ["polymath-c", "polymath-rs", "polymath-js", "examples/polymath-cli", "xtask"]
+members = ["polymath-c", "polymath-rs", "polymath-web", "examples/polymath-cli", "xtask"]
 
 [workspace.package]
 version = "0.1.1-alpha.3"

@@ -6,8 +6,11 @@
   "keywords": [],
   "author": "",
   "license": "",
+  "scripts": {
+    "start": "webpack serve --mode=development"
+  },
   "dependencies": {
-    "asciimath-js": "file:../../polymath-js/pkg"
+    "polymath-web": "file:../../polymath-web/pkg"
   },
   "devDependencies": {
     "file-loader": "^6.2.0",

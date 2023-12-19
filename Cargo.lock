@@ -414,7 +414,16 @@ dependencies = [
 ]
 
 [[package]]
-name = "polymath-js"
+name = "polymath-rs"
+version = "0.1.1-alpha.2"
+dependencies = [
+ "itertools",
+ "tracing",
+ "tracing-subscriber",
+]
+
+[[package]]
+name = "polymath-web"
 version = "0.1.1-alpha.3"
 dependencies = [
  "console_error_panic_hook",
@@ -422,15 +431,6 @@ dependencies = [
  "wasm-bindgen",
  "wasm-bindgen-test",
  "wee_alloc",
-]
-
-[[package]]
-name = "polymath-rs"
-version = "0.1.1-alpha.2"
-dependencies = [
- "itertools",
- "tracing",
- "tracing-subscriber",
 ]
 
 [[package]]

@@ -1,6 +1,6 @@
 [package]
 edition = "2021"
-name = "polymath-js"
+name = "polymath-web"
 license = "MIT"
 description = "Polymath Javascript Bindings"
 authors.workspace = true
