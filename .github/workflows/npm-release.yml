@@ -38,7 +38,8 @@ jobs:
           node-version: '14.x'
           registry-url: 'https://registry.npmjs.org'
       - name: Install wasm-pack
-        run: cargo install wasm-pack
+        # use main branch cause it will add "type" and "main" properties to package.json
+        run: cargo install --git https://github.com/rustwasm/wasm-pack.git
       - name: Build
         run: cd polymath-web && wasm-pack build
       - name: Publish to npm.js
