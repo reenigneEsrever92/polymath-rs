@@ -382,22 +382,14 @@ checksum = "e0a7ae3ac2f1173085d398531c705756c94a4c56843785df85a60c1a0afac116"
 
 [[package]]
 name = "polymath-c"
-<<<<<<< HEAD
 version = "0.1.1"
-=======
-version = "0.1.0-alpha.0"
->>>>>>> e451488 (set versions)
 dependencies = [
  "polymath-rs",
 ]
 
 [[package]]
 name = "polymath-cli"
-<<<<<<< HEAD
 version = "0.1.1"
-=======
-version = "0.1.0-alpha.0"
->>>>>>> e451488 (set versions)
 dependencies = [
  "clap",
  "open",
