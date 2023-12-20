@@ -30,6 +30,8 @@ import * as wasm from "polymath-web";
 console.log(wasm.asciimath_to_mathml("int_0^1 f(x)dx"));
 ```
 
+### Java
+
 ```xml
 <dependency>
     <groupId>eu.reverseengineer</groupId>
