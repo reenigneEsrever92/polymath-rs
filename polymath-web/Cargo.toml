@@ -14,7 +14,7 @@ default = ["console_error_panic_hook"]
 
 [dependencies]
 wasm-bindgen = { workspace = true }
-polymath-rs = { path = "../polymath-rs", version = "0.1" }
+polymath-rs = { path = "../polymath-rs", version = "0.1.0-alpha.0" }
 
 console_error_panic_hook = { workspace = true, optional = true }
 wee_alloc = { workspace = true, optional = true }

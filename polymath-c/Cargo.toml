@@ -10,4 +10,4 @@ version.workspace = true
 crate-type = ["cdylib"]
 
 [dependencies]
-polymath-rs = { path = "../polymath-rs", version = "0.1"}
+polymath-rs = { path = "../polymath-rs", version = "0.1.0-alpha.0"}
