@@ -50,14 +50,3 @@ public class App {
 }
 ```
 
-## build
-
-library crates requirements:
-
-- wasm-pack
-- java
-
-example requirements:
-
-- npm
-- webpack
