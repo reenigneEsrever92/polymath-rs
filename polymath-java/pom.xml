@@ -9,7 +9,7 @@
 
   <groupId>eu.reverseengineer</groupId>
   <artifactId>polymath-java</artifactId>
-  <version>0.1.1-alpha.5</version>
+  <version>0.1.0</version>
   <description>Polymath bindings for java</description>
 
   <licenses>

@@ -3,7 +3,7 @@ resolver = "2"
 members = ["polymath-c", "polymath-rs", "polymath-web", "examples/polymath-cli", "xtask"]
 
 [workspace.package]
-version = "0.1.0"
+version = "0.1.1"
 authors = ["Felix Marezki"]
 description = "Polymath is an Asciimath implementation with bindings for c, java and javascript written in rust"
 documentation = "https://docs.rs/polymath-rs/latest/polymath_rs/"
