@@ -382,14 +382,14 @@ checksum = "e0a7ae3ac2f1173085d398531c705756c94a4c56843785df85a60c1a0afac116"
 
 [[package]]
 name = "polymath-c"
-version = "0.1.1"
+version = "0.1.2"
 dependencies = [
  "polymath-rs",
 ]
 
 [[package]]
 name = "polymath-cli"
-version = "0.1.1"
+version = "0.1.2"
 dependencies = [
  "clap",
  "open",
@@ -399,7 +399,7 @@ dependencies = [
 
 [[package]]
 name = "polymath-rs"
-version = "0.1.1"
+version = "0.1.2"
 dependencies = [
  "itertools",
  "tracing",
@@ -407,7 +407,7 @@ dependencies = [
 
 [[package]]
 name = "polymath-web"
-version = "0.1.1"
+version = "0.1.2"
 dependencies = [
  "console_error_panic_hook",
  "polymath-rs",
@@ -874,7 +874,7 @@ checksum = "dff9641d1cd4be8d1a070daf9e3773c5f67e78b4d9d42263020c057706765c04"
 
 [[package]]
 name = "xtask"
-version = "0.1.1"
+version = "0.1.2"
 dependencies = [
  "clap",
  "color-eyre",
